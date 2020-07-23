@@ -1,0 +1,87 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.Alphabetical {
+  width: 900px;
+  margin: auto;
+  background: rgba(0, 191, 255, 0.2);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Alphabetical .list {
+  padding: 10px;
+  width: 50%;
+  -webkit-transition: 2s 1s;
+  transition: 2s 1s;
+}
+
+.Alphabetical .list .list-item {
+  padding: 5px;
+  border-bottom: 1px solid #777;
+  -webkit-transition: 2s 1s;
+  transition: 2s 1s;
+}
+
+.Alphabetical .list .list-item:first-child {
+  font-weight: bold;
+  background: lightgreen;
+}
+
+.Alphabetical .list .list-item.animate-item {
+  background: rgba(0, 191, 255, 0.7);
+}
+
+.Alphabetical .list.animate-list {
+  -webkit-box-shadow: 2px 3px 7px #333;
+          box-shadow: 2px 3px 7px #333;
+}
+
+.Alphabetical .random-word {
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 48px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Alphabetical .random-word:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

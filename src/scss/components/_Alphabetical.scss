@@ -1,0 +1,43 @@
+.Alphabetical {
+  width: 900px;
+  margin: auto;
+  background: rgba(deepskyblue, 0.2);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .list {
+    padding: 10px;
+    width: 50%;
+    transition: 2s 1s;
+    .list-item {
+      &:first-child {
+        font-weight: bold;
+        background: lightgreen;
+      }
+      padding: 5px;
+      border-bottom: 1px solid #777;
+      transition: 2s 1s;
+      &.animate-item {
+        background: rgba(deepskyblue, 0.7);
+      }
+    }
+    &.animate-list {
+      box-shadow: 2px 3px 7px #333;
+    }
+  }
+  .random-word {
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 48px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
