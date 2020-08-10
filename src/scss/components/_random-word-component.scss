@@ -1,4 +1,7 @@
 .random-word-component {
+  @include responsive(1024px) {
+    width: 36px;
+  }
   cursor: pointer;
   position: fixed;
   bottom: 15px;

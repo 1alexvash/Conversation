@@ -31,7 +31,11 @@ const WordGenerator = () => {
   return (
     <div className="Word-Generator fix-content-to-center">
       <div className="random-word">{randomWord}</div>
-      <button className="get-word" onClick={generateWord}>
+      <button
+        className="get-word"
+        style={{ marginTop: randomWord ? "20px" : "" }}
+        onClick={generateWord}
+      >
         {!randomWord ? "Generate a word" : "Generate a new word"}
       </button>
     </div>

@@ -12,13 +12,15 @@
   }
   .get-word {
     cursor: pointer;
-    margin-top: 20px;
     padding: 8px 20px;
     border: 1px solid #333;
     border-radius: 4px;
-    background: #00ace6;
+    background: darken(deepskyblue, 5%);
     text-shadow: 1px 1px 5px black;
     color: white;
     transition: 0.3s;
+    &:hover {
+      background: darken(deepskyblue, 10%);
+    }
   }
 }

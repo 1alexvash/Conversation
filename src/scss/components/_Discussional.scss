@@ -30,9 +30,6 @@
   }
   .random-word {
     background: white;
-    @include responsive(1024px) {
-      width: 36px;
-    }
     @extend .random-word-component;
     &.hide {
       pointer-events: none;
