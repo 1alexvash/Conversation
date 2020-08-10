@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Conversation/static/css/main.c110bca6.chunk.css",
+    "main.js": "/Conversation/static/js/main.c6b7f31f.chunk.js",
+    "main.js.map": "/Conversation/static/js/main.c6b7f31f.chunk.js.map",
+    "runtime-main.js": "/Conversation/static/js/runtime-main.573e3ff6.js",
+    "runtime-main.js.map": "/Conversation/static/js/runtime-main.573e3ff6.js.map",
+    "static/js/2.33e964e2.chunk.js": "/Conversation/static/js/2.33e964e2.chunk.js",
+    "static/js/2.33e964e2.chunk.js.map": "/Conversation/static/js/2.33e964e2.chunk.js.map",
+    "index.html": "/Conversation/index.html",
+    "precache-manifest.54f06d8e0a2f0b877b0616651498719d.js": "/Conversation/precache-manifest.54f06d8e0a2f0b877b0616651498719d.js",
+    "service-worker.js": "/Conversation/service-worker.js",
+    "static/css/main.c110bca6.chunk.css.map": "/Conversation/static/css/main.c110bca6.chunk.css.map",
+    "static/js/2.33e964e2.chunk.js.LICENSE.txt": "/Conversation/static/js/2.33e964e2.chunk.js.LICENSE.txt",
+    "static/media/conversation.png": "/Conversation/static/media/conversation.e575b24f.png",
+    "static/media/random.png": "/Conversation/static/media/random.7ffd03ad.png",
+    "static/media/random2.png": "/Conversation/static/media/random2.d530b969.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.573e3ff6.js",
+    "static/js/2.33e964e2.chunk.js",
+    "static/css/main.c110bca6.chunk.css",
+    "static/js/main.c6b7f31f.chunk.js"
+  ]
+}
