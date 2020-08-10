@@ -22,8 +22,18 @@
     padding: 4px 8px;
     background: lighten(blue, 10%);
     text-shadow: 1px 2px 3px #333;
+    transition: 0.3s;
+    &.chosen {
+      background: darken(red, 10%);
+    }
   }
   .random-word {
     @extend .random-word-component;
+    &.hide {
+      pointer-events: none;
+      right: -15px;
+      bottom: -15px;
+      opacity: 0;
+    }
   }
 }

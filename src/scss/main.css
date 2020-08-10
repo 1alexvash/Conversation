@@ -274,4 +274,17 @@ body {
   padding: 4px 8px;
   background: #3333ff;
   text-shadow: 1px 2px 3px #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Discussional p.chosen {
+  background: #cc0000;
+}
+
+.Discussional .random-word.hide {
+  pointer-events: none;
+  right: -15px;
+  bottom: -15px;
+  opacity: 0;
 }
