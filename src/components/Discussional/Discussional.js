@@ -10,6 +10,16 @@ const Discussional = () => {
   const generateRandomWord = () => {
     const random = Math.floor(Math.random() * data.length);
     setChosenWord(random);
+
+    // Scroll
+    const word = document.querySelectorAll(".Discussional p")[random];
+    const positionY = word.offsetTop;
+
+    window.scroll({
+      top: positionY,
+      behavior: "smooth",
+    });
+
     setHideQuestion(true);
     setTimeout(() => {
       setHideQuestion(false);
@@ -29,7 +39,7 @@ const Discussional = () => {
   return (
     <div className="Discussional">
       {data.map((q, index) => (
-        <p key={q} className={index === chosenWord && "chosen"}>
+        <p key={q} className={index === chosenWord ? "chosen" : ""}>
           {q}
         </p>
       ))}
