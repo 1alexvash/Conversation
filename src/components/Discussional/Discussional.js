@@ -16,7 +16,7 @@ const Discussional = () => {
     const positionY = word.offsetTop;
 
     window.scroll({
-      top: positionY,
+      top: positionY - 100,
       behavior: "smooth",
     });
 

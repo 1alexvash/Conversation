@@ -9,6 +9,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   @include responsive(1024px) {
+    margin-bottom: 50px;
     width: 100%;
   }
   @include responsive(640px) {
@@ -28,6 +29,10 @@
     }
   }
   .random-word {
+    background: white;
+    @include responsive(1024px) {
+      width: 36px;
+    }
     @extend .random-word-component;
     &.hide {
       pointer-events: none;

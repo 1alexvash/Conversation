@@ -264,6 +264,7 @@ body {
 
 @media (max-width: 1024px) {
   .Discussional {
+    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -288,6 +289,16 @@ body {
 
 .Discussional p.chosen {
   background: #cc0000;
+}
+
+.Discussional .random-word {
+  background: white;
+}
+
+@media (max-width: 1024px) {
+  .Discussional .random-word {
+    width: 36px;
+  }
 }
 
 .Discussional .random-word.hide {
