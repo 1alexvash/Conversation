@@ -6,7 +6,17 @@ body {
   font-size: 20px;
 }
 
+.fix-content-to-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @import "./components/Menu";
 @import "./components/random-word-component";
 @import "./components/Alphabetical";
 @import "./components/Discussional";
+@import "./components/Word-Generator";
+@import "./components/Question-Generator";
+@import "./components/Spinner";
