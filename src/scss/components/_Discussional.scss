@@ -1,0 +1,29 @@
+.car {
+  background: red;
+}
+
+.Discussional {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include responsive(1024px) {
+    width: 100%;
+  }
+  @include responsive(640px) {
+    font-size: 16px;
+  }
+  p {
+    color: white;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: lighten(blue, 10%);
+    text-shadow: 1px 2px 3px #333;
+  }
+  .random-word {
+    @extend .random-word-component;
+  }
+}

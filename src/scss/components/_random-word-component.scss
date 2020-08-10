@@ -1,0 +1,14 @@
+.random-word-component {
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 48px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,43 +1,73 @@
 .Alphabetical {
   width: 900px;
   margin: auto;
-  background: rgba(deepskyblue, 0.2);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  .list {
-    padding: 10px;
-    width: 50%;
-    transition: 2s 1s;
-    .list-item {
-      &:first-child {
-        font-weight: bold;
-        background: lightgreen;
-      }
-      padding: 5px;
-      border-bottom: 1px solid #777;
-      transition: 2s 1s;
-      &.animate-item {
-        background: rgba(deepskyblue, 0.7);
-      }
+  @include responsive(1024px) {
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 48px;
+    font-style: italic;
+    .logo {
+      width: 128px;
+      margin-right: 32px;
     }
-    &.animate-list {
-      box-shadow: 2px 3px 7px #333;
+  }
+  .header,
+  .footer {
+    background: rgba(purple, 0.7);
+    color: white;
+    text-shadow: 1px 2px 10px black;
+    padding: 20px;
+  }
+  .lists {
+    background: rgba(deepskyblue, 0.2);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .list {
+      padding: 10px;
+      width: 50%;
+      transition: 2s 0.5s;
+      .list-item {
+        &:first-child {
+          font-weight: bold;
+          background: lightgreen;
+        }
+        padding: 5px;
+        border-bottom: 1px solid #777;
+        transition: 2s 0.5s;
+        &.animate-item {
+          background: rgba(deepskyblue, 0.7);
+        }
+      }
+      &.animate-list {
+        box-shadow: 2px 3px 7px #333;
+      }
     }
   }
   .random-word {
-    cursor: pointer;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    width: 48px;
-    padding: 3px;
-    border: 1px solid black;
-    border-radius: 50%;
-    transition: 0.3s;
-    &:hover {
-      transform: scale(1.1);
+    @extend .random-word-component;
+  }
+  .footer {
+    font-size: 16px;
+    p {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    a {
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: darken(purple, 5%);
+      border: 1px solid black;
+    }
+    .small {
+      font-size: 14px;
     }
   }
 }
