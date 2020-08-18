@@ -4,12 +4,12 @@
 
 .Discussional {
   width: 900px;
-  margin: auto;
+  padding: 50px 20px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   @include responsive(1024px) {
-    margin-bottom: 50px;
     width: 100%;
   }
   @include responsive(640px) {
@@ -29,7 +29,6 @@
     }
   }
   .random-word {
-    background: white;
     @extend .random-word-component;
     &.hide {
       pointer-events: none;

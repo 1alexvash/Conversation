@@ -34,26 +34,19 @@ body {
 }
 
 .Menu .hamburger {
-  position: fixed;
-  margin: 15px;
-  display: inline-block;
   cursor: pointer;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
   z-index: 2;
+  display: inline-block;
 }
 
-.Menu .hamburger:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-20px, -60px);
-          transform: translate(-20px, -60px);
-  display: block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: -1;
+@media (max-width: 1024px) {
+  .Menu .hamburger {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+  }
 }
 
 .Menu .hamburger .bar1,
@@ -67,10 +60,19 @@ body {
   transition: 0.4s;
 }
 
+@media (max-width: 1024px) {
+  .Menu .hamburger .bar1,
+  .Menu .hamburger .bar2,
+  .Menu .hamburger .bar3 {
+    width: 30px;
+    height: 4px;
+  }
+}
+
 .Menu .hamburger.active .bar1,
 .Menu .hamburger.active .bar2,
 .Menu .hamburger.active .bar3 {
-  background: #ddd;
+  background: black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -84,6 +86,13 @@ body {
 .Menu .hamburger.active .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
           transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+@media (max-width: 1024px) {
+  .Menu .hamburger.active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+            transform: rotate(-45deg) translate(-7px, 6px);
+  }
 }
 
 .Menu .hamburger.active .bar2 {
@@ -140,6 +149,7 @@ body {
 
 .random-word-component, .Alphabetical .random-word, .Discussional .random-word {
   cursor: pointer;
+  background: white;
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -187,9 +197,23 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 640px) {
+  .Alphabetical .header {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Alphabetical .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .Alphabetical .header .logo {
   width: 128px;
-  margin-right: 32px;
 }
 
 .Alphabetical .header,
@@ -218,6 +242,14 @@ body {
   width: 50%;
   -webkit-transition: 2s 0.5s;
   transition: 2s 0.5s;
+}
+
+@media (max-width: 640px) {
+  .Alphabetical .lists .list {
+    -webkit-transition: 0.5s 0.5s;
+    transition: 0.5s 0.5s;
+    width: 100%;
+  }
 }
 
 .Alphabetical .lists .list .list-item {
@@ -272,7 +304,8 @@ body {
 
 .Discussional {
   width: 900px;
-  margin: auto;
+  padding: 50px 20px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +318,6 @@ body {
 
 @media (max-width: 1024px) {
   .Discussional {
-    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -312,10 +344,6 @@ body {
   background: #cc0000;
 }
 
-.Discussional .random-word {
-  background: white;
-}
-
 .Discussional .random-word.hide {
   pointer-events: none;
   right: -15px;
@@ -323,7 +351,7 @@ body {
   opacity: 0;
 }
 
-.Word-Generator {
+.Word-Generator, .Question-Generator {
   background: #ededed;
   padding: 20px;
   border: 1px solid black;
@@ -338,14 +366,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 280px;
 }
 
-.Word-Generator .random-word {
+.Word-Generator .random-word, .Question-Generator .random-word {
   font-size: 36px;
   font-weight: 300;
 }
 
-.Word-Generator .get-word {
+.Word-Generator .get-word, .Question-Generator .get-word {
   cursor: pointer;
   padding: 8px 20px;
   border: 1px solid #333;
@@ -357,8 +386,22 @@ body {
   transition: 0.3s;
 }
 
-.Word-Generator .get-word:hover {
+.Word-Generator .get-word:hover, .Question-Generator .get-word:hover {
   background: #0099cc;
+}
+
+.Question-Generator .random-question {
+  width: 240px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.Question-Generator .get-word {
+  background: #9a009a;
+}
+
+.Question-Generator .get-word:hover {
+  background: #b300b3;
 }
 
 .spinner {
@@ -377,6 +420,11 @@ body {
   border: 1px solid #333;
   -webkit-animation: spinner 3.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
           animation: spinner 3.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.spinner-purple > div {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8da1), to(#b300b3));
+  background: linear-gradient(#ff8da1, #b300b3);
 }
 
 @-webkit-keyframes spinner {

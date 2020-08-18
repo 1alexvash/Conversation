@@ -37,11 +37,12 @@ const FirstList = () => {
       Math.floor(Math.random() * (data[randomLetter].length - 1)) + 1;
 
     // Scroll
-    const list = document.querySelectorAll(".Alphabetical div")[randomLetter];
-    const positionY = list.offsetTop;
+    const list = document.querySelectorAll(".Alphabetical .list")[randomLetter];
+    const listItem = list.querySelectorAll(".list-item")[randomWord];
+    const positionY = listItem.offsetTop;
 
     window.scroll({
-      top: positionY,
+      top: positionY - 100,
       behavior: "smooth",
     });
 
@@ -71,7 +72,7 @@ const FirstList = () => {
           Author: <span className="small">Alexander Vashchuk</span>
         </p>
         <p>
-          Original source:{" "}
+          Original source:
           <a
             className="small"
             target="blank"

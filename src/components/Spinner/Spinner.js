@@ -1,7 +1,7 @@
 import React from "react";
 
-const Spinner = () => (
-  <div className="spinner">
+const Spinner = ({ bg }) => (
+  <div className={`spinner spinner-${bg}`}>
     <div></div>
   </div>
 );

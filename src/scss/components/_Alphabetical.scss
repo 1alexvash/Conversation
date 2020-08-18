@@ -10,9 +10,14 @@
     justify-content: space-between;
     font-size: 48px;
     font-style: italic;
+    @include responsive(640px) {
+      font-size: 32px;
+    }
+    @include responsive(480px) {
+      flex-direction: column;
+    }
     .logo {
       width: 128px;
-      margin-right: 32px;
     }
   }
   .header,
@@ -32,6 +37,10 @@
       padding: 10px;
       width: 50%;
       transition: 2s 0.5s;
+      @include responsive(640px) {
+        transition: 0.5s 0.5s;
+        width: 100%;
+      }
       .list-item {
         &:first-child {
           font-weight: bold;

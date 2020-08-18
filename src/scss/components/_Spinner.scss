@@ -11,6 +11,11 @@
   border: 1px solid #333;
   animation: spinner 3.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+
+.spinner-purple > div {
+  background: linear-gradient(darken(pink, 10%), lighten(purple, 10%));
+}
+
 @keyframes spinner {
   0%,
   100% {

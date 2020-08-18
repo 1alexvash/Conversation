@@ -1,2 +1,14 @@
 .Question-Generator {
+  @extend .Word-Generator;
+  .random-question {
+    width: 240px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .get-word {
+    background: lighten(purple, 5%);
+    &:hover {
+      background: lighten(purple, 10%);
+    }
+  }
 }

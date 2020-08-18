@@ -1,23 +1,15 @@
 .Menu {
   .hamburger {
-    position: fixed;
-    margin: 15px;
-    display: inline-block;
     cursor: pointer;
+    padding: 15px;
+    background: rgba(white, 0.5);
+    position: fixed;
     z-index: 2;
+    display: inline-block;
 
-    &:after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      transform: translate(-20px, -60px);
-      display: block;
-      position: relative;
-      width: 80px;
-      height: 80px;
-      background: rgba(white, 0.5);
-      z-index: -1;
+    @include responsive(1024px) {
+      padding: 10px;
+      background: rgba(white, 0.8);
     }
 
     .bar1,
@@ -28,13 +20,17 @@
       background-color: #222;
       margin: 6px 0;
       transition: 0.4s;
+      @include responsive(1024px) {
+        width: 30px;
+        height: 4px;
+      }
     }
 
     &.active {
       .bar1,
       .bar2,
       .bar3 {
-        background: #ddd;
+        background: black;
         transition: 0.2s;
         &:hover {
           background: #eee;
@@ -42,6 +38,9 @@
       }
       .bar1 {
         transform: rotate(-45deg) translate(-9px, 6px);
+        @include responsive(1024px) {
+          transform: rotate(-45deg) translate(-7px, 6px);
+        }
       }
       .bar2 {
         opacity: 0;
