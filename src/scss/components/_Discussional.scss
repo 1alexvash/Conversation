@@ -4,28 +4,68 @@
 
 .Discussional {
   width: 900px;
-  padding: 50px 20px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   @include responsive(1024px) {
     width: 100%;
   }
-  @include responsive(640px) {
-    font-size: 16px;
-  }
-  p {
+  .header {
+    padding: 15px 20px;
+    background: linear-gradient(deepskyblue, blue, deepskyblue);
+    margin-bottom: 20px;
     color: white;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 4px 8px;
-    background: lighten(blue, 10%);
-    text-shadow: 1px 2px 3px #333;
-    transition: 0.3s;
-    &.chosen {
-      background: darken(red, 10%);
+    font-size: 24px;
+    @include responsive(1024px) {
+      text-align: center;
+    }
+    @include responsive(480px) {
+      text-align: right;
+      font-size: 20px;
+    }
+  }
+  .words {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include responsive(640px) {
+      font-size: 16px;
+    }
+    p {
+      color: white;
+      margin: 5px;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: lighten(blue, 10%);
+      text-shadow: 1px 2px 3px #333;
+      transition: 0.3s;
+      &.chosen {
+        background: darken(red, 10%);
+      }
+    }
+  }
+  .footer {
+    margin-top: 15px;
+    border-top: 2px solid black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    @include responsive(480px) {
+      flex-direction: column;
+      p {
+        text-align: center;
+        padding: 5px 0;
+      }
+    }
+    p {
+      font-weight: 300;
+      img {
+        width: 20px;
+        margin-left: 4px;
+      }
+      a {
+        color: blue;
+      }
     }
   }
   .random-word {

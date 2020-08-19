@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import data from "./data.json";
 
+import authorImg from "../../images/author.png";
+import linkImg from "../../images/link.png";
 import randomWordImg from "../../images/random2.png";
 
 const Discussional = () => {
@@ -26,6 +28,16 @@ const Discussional = () => {
     }, 2000);
   };
 
+  const WordsComponent = (
+    <div className="words">
+      {data.map((word, index) => (
+        <p key={word} className={index === chosenWord ? "chosen" : ""}>
+          {word}
+        </p>
+      ))}
+    </div>
+  );
+
   const RandomWordComponent = (
     <img
       src={randomWordImg}
@@ -38,11 +50,23 @@ const Discussional = () => {
 
   return (
     <div className="Discussional">
-      {data.map((q, index) => (
-        <p key={q} className={index === chosenWord ? "chosen" : ""}>
-          {q}
+      <header className="header">Englsih conversation</header>
+      {WordsComponent}
+      <footer className="footer">
+        <p>
+          Alexander Vashchuk <img src={authorImg} alt="author" title="author" />
         </p>
-      ))}
+        <p>
+          <a href="http://iteslj.org/questions/">
+            Original source{" "}
+            <img
+              src={linkImg}
+              alt="link"
+              title="link to the original content"
+            />
+          </a>
+        </p>
+      </footer>
       {RandomWordComponent}
     </div>
   );
