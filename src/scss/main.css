@@ -33,6 +33,40 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.App-Description {
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+@media (max-width: 640px) {
+  .App-Description {
+    width: 100%;
+  }
+}
+
+.App-Description h1 {
+  font-size: 36px;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .App-Description h1 {
+    text-align: center;
+  }
+}
+
+.App-Description p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.App-Description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .Menu .hamburger {
   cursor: pointer;
   padding: 15px;
