@@ -54,7 +54,7 @@ body {
 .Menu .hamburger .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #222;
+  background: #222;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -69,18 +69,10 @@ body {
   }
 }
 
-.Menu .hamburger.active .bar1,
-.Menu .hamburger.active .bar2,
-.Menu .hamburger.active .bar3 {
-  background: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.Menu .hamburger.active .bar1:hover,
-.Menu .hamburger.active .bar2:hover,
-.Menu .hamburger.active .bar3:hover {
-  background: #eee;
+.Menu .hamburger.active:hover .bar1,
+.Menu .hamburger.active:hover .bar2,
+.Menu .hamburger.active:hover .bar3 {
+  background: white;
 }
 
 .Menu .hamburger.active .bar1 {
