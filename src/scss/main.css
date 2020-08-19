@@ -286,6 +286,13 @@ body {
       justify-content: space-around;
 }
 
+.Alphabetical .footer p img {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  margin-left: 4px;
+}
+
 .Alphabetical .footer a {
   color: white;
   padding: 4px 8px;

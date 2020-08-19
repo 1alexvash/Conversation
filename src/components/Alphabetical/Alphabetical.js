@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import data from "./data.json";
 
+import authorImg from "../../images/author.png";
+import linkImg from "../../images/link.png";
 import randomWordImg from "../../images/random.png";
 import conversationImg from "../../images/conversation.png";
 
@@ -69,10 +71,15 @@ const FirstList = () => {
       {ListComponent}
       <footer className="footer">
         <p>
-          Author: <span className="small">Alexander Vashchuk</span>
+          <span>
+            Author: <img src={authorImg} alt="" />
+          </span>
+          <span className="small">Alexander Vashchuk</span>
         </p>
         <p>
-          Original source:
+          <span>
+            Original source: <img src={linkImg} alt="" />
+          </span>
           <a
             className="small"
             target="blank"
