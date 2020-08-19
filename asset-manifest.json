@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/Conversation/static/css/main.1b910a37.chunk.css",
-    "main.js": "/Conversation/static/js/main.7b6304e0.chunk.js",
-    "main.js.map": "/Conversation/static/js/main.7b6304e0.chunk.js.map",
+    "main.css": "/Conversation/static/css/main.5ea6e12a.chunk.css",
+    "main.js": "/Conversation/static/js/main.3dc45c2b.chunk.js",
+    "main.js.map": "/Conversation/static/js/main.3dc45c2b.chunk.js.map",
     "runtime-main.js": "/Conversation/static/js/runtime-main.573e3ff6.js",
     "runtime-main.js.map": "/Conversation/static/js/runtime-main.573e3ff6.js.map",
-    "static/js/2.c6ec06a2.chunk.js": "/Conversation/static/js/2.c6ec06a2.chunk.js",
-    "static/js/2.c6ec06a2.chunk.js.map": "/Conversation/static/js/2.c6ec06a2.chunk.js.map",
+    "static/js/2.fa67e31b.chunk.js": "/Conversation/static/js/2.fa67e31b.chunk.js",
+    "static/js/2.fa67e31b.chunk.js.map": "/Conversation/static/js/2.fa67e31b.chunk.js.map",
     "index.html": "/Conversation/index.html",
-    "precache-manifest.aa3639028f16279801ccc5bfbc3256cc.js": "/Conversation/precache-manifest.aa3639028f16279801ccc5bfbc3256cc.js",
+    "precache-manifest.9a2ee8e0209800e896f6e00a298a1a63.js": "/Conversation/precache-manifest.9a2ee8e0209800e896f6e00a298a1a63.js",
     "service-worker.js": "/Conversation/service-worker.js",
-    "static/css/main.1b910a37.chunk.css.map": "/Conversation/static/css/main.1b910a37.chunk.css.map",
-    "static/js/2.c6ec06a2.chunk.js.LICENSE.txt": "/Conversation/static/js/2.c6ec06a2.chunk.js.LICENSE.txt",
+    "static/css/main.5ea6e12a.chunk.css.map": "/Conversation/static/css/main.5ea6e12a.chunk.css.map",
+    "static/js/2.fa67e31b.chunk.js.LICENSE.txt": "/Conversation/static/js/2.fa67e31b.chunk.js.LICENSE.txt",
+    "static/media/author.png": "/Conversation/static/media/author.e4a6f2de.png",
     "static/media/conversation.png": "/Conversation/static/media/conversation.e575b24f.png",
+    "static/media/link.png": "/Conversation/static/media/link.25564e2a.png",
     "static/media/random.png": "/Conversation/static/media/random.7ffd03ad.png",
     "static/media/random2.png": "/Conversation/static/media/random2.d530b969.png"
   },
   "entrypoints": [
     "static/js/runtime-main.573e3ff6.js",
-    "static/js/2.c6ec06a2.chunk.js",
-    "static/css/main.1b910a37.chunk.css",
-    "static/js/main.7b6304e0.chunk.js"
+    "static/js/2.fa67e31b.chunk.js",
+    "static/css/main.5ea6e12a.chunk.css",
+    "static/js/main.3dc45c2b.chunk.js"
   ]
 }
