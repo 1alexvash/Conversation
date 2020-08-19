@@ -30,7 +30,7 @@ const App = () => {
             Huge list of words. Just choose any word like "Sun" and give it to
             your partner and ask him to ask you a question in return with that
             word like "Do you like being on the sun". After your answer switch
-            it off and ask him to to choose.
+            it off and ask him to choose another word.
           </p>
           <h2>Discussional</h2>
           <p>Shorter list of words but with more spicy topics</p>

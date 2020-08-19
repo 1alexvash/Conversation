@@ -79,7 +79,7 @@ body {
 @media (max-width: 1024px) {
   .Menu .hamburger {
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
@@ -312,11 +312,27 @@ body {
       justify-content: space-around;
 }
 
+@media (max-width: 480px) {
+  .Alphabetical .footer p {
+    font-size: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .Alphabetical .footer p img {
   position: relative;
   top: 2px;
   width: 16px;
   margin-left: 4px;
+}
+
+@media (max-width: 480px) {
+  .Alphabetical .footer p img {
+    width: 20px;
+  }
 }
 
 .Alphabetical .footer a {
@@ -327,8 +343,22 @@ body {
   border: 1px solid black;
 }
 
+@media (max-width: 480px) {
+  .Alphabetical .footer a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .Alphabetical .footer .small {
   font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .Alphabetical .footer .small {
+    margin-top: 10px;
+  }
 }
 
 .car {
